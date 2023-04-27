@@ -22,9 +22,9 @@ Projeto realizado com o objetivo de desenvolver um site onde é calculado sua id
 -  Validação de no input Ano, para que seja colocado somente até o ano atual, aparecendo uma mensagem de erro.
     
 ## 🖱️ A página
-<img src="src/images/desktop-mobile.gif" alt="Gif exibindo o desktop e versão mobile do site">    
+<img src="src/img/desktop-mobile.gif" alt="Gif exibindo o desktop e versão mobile do site">    
 
-> <a href="https://devkarine.github.io/age-calculator/" target= "_blank">Acesse a página online - Em construção</a>  
+> <a href="https://devkarine.github.io/age-calculator/" target= "_blank">Acesse a página online</a>  
 
 
 ## 👩‍💻 Dev
