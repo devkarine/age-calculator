@@ -1,0 +1,23 @@
+@media(max-width: 620px){
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        width: 35rem;
+    }
+
+    .card .form-date input{
+        width: 10rem;
+    }
+
+    .botao{
+       padding-top: 2rem; 
+    }
+
+    .card .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

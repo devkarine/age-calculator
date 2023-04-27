@@ -7,7 +7,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 }
@@ -50,7 +49,7 @@ body {
 .card .form-date input {
   color: var(--fs-01);
   font-weight: 800;
-  font-size: 3.2rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
   width: 16rem;
   height: 7rem;
   padding: 3rem 1.5rem;
@@ -61,12 +60,22 @@ body {
 .card .form-date input::placeholder {
   color: var(--fs-01);
   font-weight: 800;
-  font-size: 3.2rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
 .card .form-date a{
   color: var(--error);
   visibility: hidden;
+}
+
+.botao{
+  display: flex;
+  flex-direction: column;
+
+}
+
+hr{
+  position: relative;
 }
 
 
@@ -76,12 +85,15 @@ body {
   background-color: inherit;
   justify-content: end;
   
+  
 }
 
 .card .btn img {
+  position: absolute;
   background-color: var(--fs-02);
   border-radius: 50%;
   width: 7rem;
+  
 }
 
 .card .answer p{
@@ -93,7 +105,7 @@ body {
 .card .answer p span{
     color: var(--fs-02);
     font-weight: 800;
-    font-size: 5rem;
+    font-size: clamp(3rem, 4vw, 5rem)
 }
 
 .card .form .wrapper .form-date.error label{

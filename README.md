@@ -24,7 +24,7 @@ Projeto realizado com o objetivo de desenvolver um site onde é calculado sua id
 ## 🖱️ A página
 <img src="src/images/desktop-mobile.gif" alt="Gif exibindo o desktop e versão mobile do site">    
 
-> <a href="" target= "_blank">Acesse a página online - Em construção</a>  
+> <a href="https://devkarine.github.io/age-calculator/" target= "_blank">Acesse a página online - Em construção</a>  
 
 
 ## 👩‍💻 Dev

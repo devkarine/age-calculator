@@ -9,15 +9,12 @@ let anoAtual = dataAtual.getFullYear();
 let mesAtual = dataAtual.getMonth() + 1;
 let diaAtual = dataAtual.getDate();
 
-
 btnCalcular.addEventListener("click", (event) => {
-    event.preventDefault()
+  event.preventDefault();
   inputDia();
   inputMes();
   inputAno();
-  
 });
-
 
 function inputDia() {
   let diaValue = dia.value;
@@ -26,7 +23,7 @@ function inputDia() {
     errorInput(dia, "Campo vazio");
   } else if (diaValue < 1 || diaValue > 31) {
     errorInput(dia, "Número inválido");
-    idadeDia.innerText = "--"
+    idadeDia.innerText = "--";
   } else {
     errorInput(dia, "");
     const inputSelecionado = dia.parentElement;
@@ -35,7 +32,6 @@ function inputDia() {
   }
 }
 
-
 function inputMes() {
   let mesValue = mes.value;
 
@@ -43,7 +39,7 @@ function inputMes() {
     errorInput(mes, "Campo Vazio");
   } else if (mesValue < 1 || mesValue > 12) {
     errorInput(mes, "Mês invalido");
-    idadeMes.innerText = "--"
+    idadeMes.innerText = "--";
   } else {
     errorInput(mes, "");
     const inputSelecionado = mes.parentElement;
@@ -52,7 +48,6 @@ function inputMes() {
   }
 }
 
-
 function inputAno() {
   let anoValue = anoNascimento.value;
 
@@ -60,7 +55,7 @@ function inputAno() {
     errorInput(ano, "Campo vazio");
   } else if (anoValue > anoAtual) {
     errorInput(ano, "Ano no futuro");
-    idadeAno.innerText = "--"
+    idadeAno.innerText = "--";
   } else {
     errorInput(ano, "");
     const inputSelecionado = ano.parentElement;
@@ -68,7 +63,6 @@ function inputAno() {
     idadeEmAnosMesDias();
   }
 }
-
 
 function errorInput(input, message) {
   const inputSelecionado = input.parentElement;
@@ -80,18 +74,14 @@ function errorInput(input, message) {
   inputSelecionado.className = "form-date error";
 }
 
-
 function idadeEmAnosMesDias() {
   let anoValue = anoNascimento.value;
   let mesValue = mes.value;
   let diaValue = dia.value;
 
-
   const dataNascimento = new Date(`${anoValue}-${mesValue}-${diaValue}`);
 
-
   const diff = new Date() - dataNascimento;
-
 
   const idadeAnos = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
   const idadeMeses = Math.floor(
@@ -100,7 +90,6 @@ function idadeEmAnosMesDias() {
   const idadeDias = Math.floor(
     (diff % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000)
   );
-
 
   const idadeAno = document.getElementById("years");
   const idadeMes = document.getElementById("months");
